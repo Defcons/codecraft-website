@@ -603,6 +603,36 @@ section { padding: 120px 0; }
     height: 220px;
 }
 
+.project-with-img {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.project-card-content {
+    flex: 1;
+}
+
+.project-card-illustration {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.project-card-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6) saturate(0.5) sepia(0.3) hue-rotate(190deg);
+    transition: filter var(--transition);
+}
+
+.project-card:hover .project-card-illustration img {
+    filter: brightness(0.7) saturate(0.6) sepia(0.2) hue-rotate(190deg);
+}
+
 .project-tag {
     display: inline-block;
     padding: 4px 12px;
@@ -989,6 +1019,9 @@ footer {
     }
 
     .project-featured { grid-column: auto; }
+
+    .project-with-img { flex-direction: column; }
+    .project-card-illustration { width: 100%; height: 140px; }
 
     .hero-stats {
         gap: 32px;
