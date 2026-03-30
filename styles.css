@@ -3,12 +3,12 @@
    ============================================ */
 
 :root {
-    --bg-primary: #141520;
-    --bg-secondary: #1a1b2e;
-    --bg-card: #212338;
-    --bg-card-hover: #282a42;
-    --border: #2e3050;
-    --border-light: #3a3d5c;
+    --bg-primary: #1e2030;
+    --bg-secondary: #252840;
+    --bg-card: #2e3150;
+    --bg-card-hover: #363a5a;
+    --border: #3e4168;
+    --border-light: #4a4e78;
     --text-primary: #f2f3f8;
     --text-secondary: #b0b3cc;
     --text-muted: #7d80a0;
