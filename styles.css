@@ -3,15 +3,15 @@
    ============================================ */
 
 :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f0f0f5;
-    --bg-card: #ffffff;
-    --bg-card-hover: #f5f5fa;
-    --border: #e0e0e8;
-    --border-light: #d0d0dc;
-    --text-primary: #1a1a2e;
-    --text-secondary: #4a4a6a;
-    --text-muted: #8888a0;
+    --bg-primary: #1b1f36;
+    --bg-secondary: #212642;
+    --bg-card: #272c4a;
+    --bg-card-hover: #2f3555;
+    --border: #363c60;
+    --border-light: #434a72;
+    --text-primary: #eceef5;
+    --text-secondary: #b0b5d0;
+    --text-muted: #8088aa;
     --accent: #3b82f6;
     --accent-hover: #2563eb;
     --accent-glow: rgba(59, 130, 246, 0.15);
@@ -58,7 +58,7 @@ img { max-width: 100%; display: block; }
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(27, 31, 54, 0.85);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid transparent;
@@ -67,7 +67,7 @@ img { max-width: 100%; display: block; }
 
 #navbar.scrolled {
     border-bottom-color: var(--border);
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(27, 31, 54, 0.95);
 }
 
 .nav-container {
@@ -223,7 +223,7 @@ img { max-width: 100%; display: block; }
     transform: translateX(-50%);
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.08), transparent 60%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12), transparent 60%);
     pointer-events: none;
 }
 
@@ -568,7 +568,7 @@ section { padding: 120px 0; }
 
 .project-featured {
     grid-column: 1 / -1;
-    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.05) 100%);
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.10) 100%);
     border-color: rgba(59, 130, 246, 0.2);
 }
 
@@ -655,7 +655,7 @@ section { padding: 120px 0; }
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.06), transparent 60%);
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.10), transparent 60%);
     pointer-events: none;
 }
 
