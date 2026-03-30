@@ -16,9 +16,10 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
+            git config --global --add safe.directory /apps/codecraft-website
             cd /apps/codecraft-website
             git fetch origin
             git reset --hard origin/master
-            docker compose build
+            docker compose build --no-cache
             docker compose up -d
             echo "Codecraft website deploy complete"
