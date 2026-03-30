@@ -615,8 +615,8 @@ section { padding: 120px 0; }
 
 .project-card-illustration {
     flex-shrink: 0;
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: var(--radius);
     overflow: hidden;
 }
@@ -1021,7 +1021,7 @@ footer {
     .project-featured { grid-column: auto; }
 
     .project-with-img { flex-direction: column; }
-    .project-card-illustration { width: 100%; height: 140px; }
+    .project-card-illustration { width: 100px; height: 100px; }
 
     .hero-stats {
         gap: 32px;
