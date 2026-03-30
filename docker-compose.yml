@@ -1,0 +1,7 @@
+services:
+  codecraft-web:
+    build: .
+    container_name: codecraft-website
+    restart: unless-stopped
+    ports:
+      - "3010:80"
