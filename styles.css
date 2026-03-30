@@ -3,15 +3,15 @@
    ============================================ */
 
 :root {
-    --bg-primary: #1e2030;
-    --bg-secondary: #252840;
-    --bg-card: #2e3150;
-    --bg-card-hover: #363a5a;
-    --border: #3e4168;
-    --border-light: #4a4e78;
-    --text-primary: #f2f3f8;
-    --text-secondary: #b0b3cc;
-    --text-muted: #7d80a0;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f0f0f5;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f5f5fa;
+    --border: #e0e0e8;
+    --border-light: #d0d0dc;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a6a;
+    --text-muted: #8888a0;
     --accent: #3b82f6;
     --accent-hover: #2563eb;
     --accent-glow: rgba(59, 130, 246, 0.15);
@@ -58,7 +58,7 @@ img { max-width: 100%; display: block; }
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(20, 21, 32, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid transparent;
@@ -67,7 +67,7 @@ img { max-width: 100%; display: block; }
 
 #navbar.scrolled {
     border-bottom-color: var(--border);
-    background: rgba(20, 21, 32, 0.95);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .nav-container {
