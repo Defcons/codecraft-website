@@ -1,1 +1,28 @@
 .claude/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+credentials.json
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Dependencies / build
+node_modules/
+dist/
+build/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
