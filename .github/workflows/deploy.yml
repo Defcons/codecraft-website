@@ -28,6 +28,7 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key:      ${{ secrets.DEPLOY_SSH_KEY }}
           script: |
+            set -euo pipefail
             git config --global --add safe.directory /apps/codecraft-website
             cd /apps/codecraft-website
             git fetch origin
