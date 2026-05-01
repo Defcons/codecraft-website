@@ -3,5 +3,7 @@ services:
     build: .
     container_name: codecraft-website
     restart: unless-stopped
+    environment:
+      - TZ=Europe/Oslo
     ports:
       - "3010:80"
