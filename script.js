@@ -140,6 +140,15 @@
         const form = document.getElementById('contactForm');
         if (form) form.addEventListener('submit', handleFormSubmit);
 
+        // Contact email — assembled at runtime so the plaintext address never
+        // appears in the committed source (defeats repo email-harvesting bots).
+        const emailLink = document.getElementById('cc-email');
+        if (emailLink) {
+            const addr = atob('ZGF2aWRzZW45MDhAZ21haWwuY29t');
+            emailLink.href = 'mailto:' + addr;
+            emailLink.textContent = addr;
+        }
+
         // Scroll animations
         initScrollAnimations();
     }
