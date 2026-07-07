@@ -11,6 +11,10 @@ AI-first: the site leads with AI-engineering as the core offering, with 8 years 
 industrial/subsea automation delivery as the credibility foundation (not the headline).
 Keep that balance when editing copy — AI is the method, automation is the proof.
 
+Naming: never call the private-cloud project a "homelab" in copy — it is
+"Private Cloud Infrastructure". Its diagram image (`homelab.jpg`) is captured from
+`../homelab-architecture` with the top header (which reads "Defcon Homelab") cropped off.
+
 ## Layout
 - `index.html` — all content. Sections in order (each `<section id=…>`):
   `hero → about → founder → ai → services → projects → websites → contact → footer`.
@@ -36,6 +40,8 @@ Every user-visible string carries BOTH `data-en` and `data-no`; `setLanguage` sw
   (Live/Private/In dev) into the modal. Title/description are pulled from the card's `h3`/`p`.
 - No screenshot for a card → modal hides its media block (CloudDrive, Vehicle Telemetry,
   Smart Home currently have none).
+- `data-fit="contain"` on a card → modal image uses `object-fit: contain` instead of
+  cover (for portrait/phone app screenshots that would otherwise crop-zoom, e.g. NoBS).
 
 ## Images
 - `images/projects/` — card/modal screenshots, JPEG q82 (~1 MB total). Source-of-truth originals

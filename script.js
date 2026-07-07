@@ -161,6 +161,7 @@
             if (shots.length) {
                 img.src = shots[0];
                 img.alt = (card.querySelector('h3') || {}).textContent || '';
+                img.classList.toggle('modal-img--contain', card.dataset.fit === 'contain');
                 media.hidden = false;
                 buildThumbs(shots);
             } else {

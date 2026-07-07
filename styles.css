@@ -1172,6 +1172,16 @@ section { padding: 120px 0; }
     background: var(--bg-secondary);
 }
 
+/* Portrait / app screenshots: show the whole screen, don't crop-zoom */
+.modal-img--contain {
+    object-fit: contain;
+    max-height: 540px;
+    padding: 12px;
+    background:
+        radial-gradient(120% 90% at 50% 0%, rgba(6, 182, 212, 0.06), transparent 60%),
+        var(--bg-secondary);
+}
+
 .modal-thumbs {
     display: flex;
     gap: 8px;
