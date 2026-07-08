@@ -1047,8 +1047,12 @@ section { padding: 120px 0; }
     color: var(--text-secondary);
     max-width: 720px;
     margin-top: -32px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
     line-height: 1.8;
+}
+
+.web-cta {
+    margin: 0 0 44px;
 }
 
 .web-grid {
