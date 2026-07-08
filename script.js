@@ -204,7 +204,7 @@
             if (lastFocused && lastFocused.focus) lastFocused.focus();
         }
 
-        document.querySelectorAll('.ai-card--modal').forEach(card => {
+        document.querySelectorAll('.ai-card--modal, .service-card--modal').forEach(card => {
             card.addEventListener('click', () => openModal(card));
             card.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter' || e.key === ' ') {

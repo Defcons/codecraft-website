@@ -33,7 +33,9 @@ Every user-visible string carries BOTH `data-en` and `data-no`; `setLanguage` sw
 `textContent` on toggle. When adding content, always add both or it won't translate.
 
 ## Project modal (AI & Innovation + Websites)
-- Any card with class `ai-card--modal` is clickable (mouse + Enter/Space) → opens `#projectModal`.
+- Any card with class `ai-card--modal` OR `service-card--modal` is clickable (mouse +
+  Enter/Space) → opens `#projectModal`. Service cards also show a top banner image
+  (`.service-thumb`, bleeds past card padding via negative margins).
 - `initModal` reads the clicked card's `data-*`: `data-shot`/`data-shot2` (images → main +
   thumbnail switcher), `data-link`/`data-link-label` (+ `data-link2…`) → gradient link buttons,
   `data-private="1"` → shows the "repository kept closed" note, and mirrors the card's `.ai-badge`
