@@ -4,7 +4,16 @@ Single-page marketing site for **Codecraft AS** (codecraft.cc / codecrafts.cc).
 Static: hand-written `index.html` + `styles.css` + `script.js`, served by nginx in a
 container. Deploy = push to `master` → GitHub Actions → server (see `.github/`, `deploy/`).
 
-_Last verified: 2026-07-07_
+_Last verified: 2026-07-12_
+
+## Runtime / serving
+Live path: **Cloudflare → NPM (Nginx Proxy Manager, Tailscale host `npm-lxc102`) → this
+container on host `defcon` port `3010`**. The sibling `codecrafts-sites` container serves the
+`*.codecrafts.cc` subdomains on `3070` (independent — a marketing-site outage doesn't touch them).
+Gotcha: a **502 on codecrafts.cc with the other subdomains still 200** = the *proxy*, not the
+container. Seen once (2026-07-12) when NPM's **"Websockets Support"** toggle got disabled on the
+codecrafts.cc proxy host — re-enabling it regenerated the config and restored the upstream. Check
+NPM before assuming the container is down.
 
 ## Positioning
 AI-first: the site leads with AI-engineering as the core offering, with 8 years of
