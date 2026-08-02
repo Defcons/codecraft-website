@@ -1,10 +1,10 @@
-# CODE-MAP — codecraft-website
+# CodeMap — codecraft-website
 
 Single-page marketing site for **Codecraft AS** (codecraft.cc / codecrafts.cc).
 Static: hand-written `index.html` + `styles.css` + `script.js`, served by nginx in a
 container. Deploy = push to `master` → GitHub Actions → server (see `.github/`, `deploy/`).
 
-_Last verified: 2026-07-12_
+_Last verified: 2026-08-03 @ 7d68a81 — renamed CODE-MAP.md → CodeMap.md; site facts otherwise unchanged (last live-verified 2026-07-12). **NOTE: this repo is RETIRED** — codecraft-website was folded into `agentas-sites/apex/` on 2026-07-30 (the `apex/` site dir now serves agentas.net on that container); this repo/container is no longer the live source. Kept for history._
 
 ## Runtime / serving
 Live path: **Cloudflare → NPM (Nginx Proxy Manager, Tailscale host `npm-lxc102`) → this
